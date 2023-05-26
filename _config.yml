@@ -1,0 +1,34 @@
+title: Bernardo's site
+description: Bernardo's personal webpage
+author: "Bernardo Gonzalez"
+
+theme: minima
+
+base_url: /gh-pages-minima-starter
+
+# Minima social links
+github_username: b3r8
+linkedin_username: bernardo-gonzalez-torres
+
+# Minima: show excerpts in the frontpage
+show_excerpts: true
+
+minima:
+  date_format: "%Y-%m-%d"
+
+# Minima: custom header links
+header_pages:
+  - _pages/frontpage.md
+  - _pages/about.md
+  - _pages/archive.md
+
+include:
+    - _pages
+
+exclude: 
+    - .gitignore
+    - docker-compose.yml
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
