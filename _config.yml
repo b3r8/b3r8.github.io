@@ -1,8 +1,7 @@
 title: Bernardo's site
 description: Bernardo's personal webpage
-author:
-  name: "Bernardo Gonzalez"
-  email: "bernardo.gtorres@gmail.com"
+author: "Bernardo Gonzalez"
+email: "bernardo.gtorres@gmail.com"
 
 theme: minima
 
