@@ -25,11 +25,8 @@ include:
 
 exclude: 
     - .gitignore
+    - docker-compose.yml
     - Gemfile
+    - Gemfile.lock
     - LICENSE
     - README.md
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  
