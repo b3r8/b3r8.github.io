@@ -19,12 +19,3 @@ minima:
 header_pages:
   - _pages/about.md
   - _pages/archive.md
-
-include:
-    - _pages
-
-exclude: 
-    - .gitignore
-    - Gemfile
-    - LICENSE
-    - README.md
