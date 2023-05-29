@@ -5,8 +5,6 @@ email: "bernardo.gtorres@gmail.com"
 
 theme: minima
 
-base_url: /gh-pages-minima-starter
-
 # Minima social links
 github_username: b3r8
 linkedin_username: bernardo-gonzalez-torres
@@ -27,9 +25,7 @@ include:
 
 exclude: 
     - .gitignore
-    - docker-compose.yml
     - Gemfile
-    - Gemfile.lock
     - LICENSE
     - README.md
 
