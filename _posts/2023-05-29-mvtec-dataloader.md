@@ -19,8 +19,8 @@ Paraphrasing from the company's website: *'MVTec AD is a dataset for benchmarkin
 
 More precisely, the MVTec dataset is a dataset composed of **5354 high resolution square images** of different objects, comprising **15 categories with 3629 images for training and validation, and 1725 images for testing**. The training set only contains normal, i.e., defect-free images (*label 1*) and the test set contains both types of images: images containing various types of defects (*label 0*) and defect-free images. The anomalies manifest themselves in the form of over 70 different types of defects such as scratches, dents, contaminations, and various structural changes. Additionally, pixel-precise ground truth regions for all anomalies are provided in the dataset.
 
-![Hazelnut examples](/assets/imgs/2023-05-29-post/figure_2_blog_1_mvtec.jpg)
-*Figure 2. Normal, defective and ground truth samples for 'Hazelnut' category*
+![Hazelnut examples](/assets/imgs/2023-05-29-post/figure_2_blog_1_mvtec.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+<h5 align="center"> Figure 2. Normal, defective and ground truth samples for 'Hazelnut' category</h5>
 
 The main reference for the dataset is the paper [MVTec AD - A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection](https://openaccess.thecvf.com/content_CVPR_2019/papers/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.pdf), written by Bergmann and his collaborators. In this work, they introduce the dataset and also conduct a detailed evaluation of different unsupervised anomaly detection methods based on deep architectures such as convolutional autoencoders and generative adversarial networks, as well as classical computer vision methods. Table 1 in the paper gives a statistical overview for each category. [Table 1](#table-1) in this post is inspired from table 1 in the paper, with some additional relevant information, like the number of channels for each category.
 
@@ -111,16 +111,16 @@ The data loader has two main functions: `__len__` and `__getitem__`:
 
 Figure 3 shows a screenshot from the test notebook, where the training data from the toothbrush category was loaded, transforming the images to pytorch tensors of size 256x256x3, with the bicubic interpolation method (interpolation method number 3).
 
-![Data loader example](/assets/imgs/2023-05-29-post/figure_3_blog_1_dataloader_example.jpg)
-*Figure 3. Loading toothbrush training images*
+![Data loader example](/assets/imgs/2023-05-29-post/figure_3_blog_1_dataloader_example.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+<h5 align="center"> Figure 3. Loading toothbrush training images</h5>
 
 Finally, the test notebook provides an example on how we can use the data loader in combination with the data loader from pytorch. Pytorch's data loader takes the data loaded with our implementation and creates a new data loader with two main additional features (among others): it breaks the dataset in batches of a chosen size and it allows us to shuffle the data in the dataset. Figures 4 and 5 shows a couple of screenshots from the test notebook, where the test data from the pill category was loaded, transforming the images to pytorch tensors of size 128x128x3, with the bicubic interpolation method (interpolation method number 3). After that, a pytorch data loader is created with this data, breaking the dataset in batches of size 20.
 
-![Pytorch data loader example 1](/assets/imgs/2023-05-29-post/figure_4_blog_1_pytorch_example.jpg)
-*Figure 4. Loading pill test images*
+![Pytorch data loader example 1](/assets/imgs/2023-05-29-post/figure_4_blog_1_pytorch_example.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+<h5 align="center"> Figure 4. Loading pill test images</h5>
 
-![Pytorch data loader example 2](/assets/imgs/2023-05-29-post/figure_5_blog_1_pytorch_example.jpg)
-*Figure 5. Using our data loader with pytorch's data loader*
+![Pytorch data loader example 2](/assets/imgs/2023-05-29-post/figure_5_blog_1_pytorch_example.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+<h5 align="center"> Figure 5. Using our data loader with pytorch's data loader</h5>
 
 We hope that this implementation may be useful for the ML/AD/CV community, and we would like to hear your feedback.
 
