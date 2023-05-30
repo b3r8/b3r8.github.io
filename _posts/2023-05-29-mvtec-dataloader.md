@@ -22,7 +22,7 @@ More precisely, the MVTec dataset is a dataset composed of **5354 high resolutio
 ![Hazelnut examples](/assets/imgs/2023-05-29-post/figure_2_blog_1_mvtec.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 <h5 align="center"> Figure 2. Normal, defective and ground truth samples for 'Hazelnut' category</h5>
 
-The main reference for the dataset is the paper [MVTec AD - A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection](https://openaccess.thecvf.com/content_CVPR_2019/papers/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.pdf), written by Bergmann and his collaborators. In this work, they introduce the dataset and also conduct a detailed evaluation of different unsupervised anomaly detection methods based on deep architectures such as convolutional autoencoders and generative adversarial networks, as well as classical computer vision methods. Table 1 in the paper gives a statistical overview for each category. [Table 1](#table-1) in this post is inspired from table 1 in the paper, with some additional relevant information, like the number of channels for each category.
+The main reference for the dataset is the paper [MVTec AD - A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection](https://openaccess.thecvf.com/content_CVPR_2019/papers/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.pdf), written by Bergmann and his collaborators. In this work, they introduce the dataset and also conduct a detailed evaluation of different unsupervised anomaly detection methods based on deep architectures such as convolutional autoencoders and generative adversarial networks, as well as classical computer vision methods. Table 1 in the paper gives a statistical overview for each category. [Table 1](#table-1-statistical-overview-of-the-dataset) in this post is inspired from table 1 in the paper, with some additional relevant information, like the number of channels for each category.
 
 ##### Table 1. Statistical overview of the dataset
 
@@ -72,7 +72,7 @@ data = mvtec.MVTEC(root='./mvtec',
                    category='toothbrush')
 ```
 
-The data loader has 7 input arguments. 3 of them are optional (*transform*, *target_transform* and *resize*), and all of them except 'root' have a default value. We can see a brief summary of the input arguments in [table 2](#table-2).
+The data loader has 7 input arguments. 3 of them are optional (*transform*, *target_transform* and *resize*), and all of them except 'root' have a default value. We can see a brief summary of the input arguments in [table 2](#table-2-input-arguments-for-data-loader).
 
 ##### Table 2. Input arguments for data loader
 
