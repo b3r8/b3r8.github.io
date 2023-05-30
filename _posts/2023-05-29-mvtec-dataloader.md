@@ -4,9 +4,16 @@ date: 2023-05-29
 layout: post
 ---
 
-In this post, we will introduce a data loader for the MVTec dataset, a dataset for benchmarking anomaly detection methods with a focus on industrial inspection.
+In this post, we introduce a data loader for the MVTec dataset, a dataset for benchmarking anomaly detection methods with a focus on industrial inspection.
 
 # The problem
+
+# A
+## A
+### A
+#### A
+##### A
+###### A
 
 **Anomaly detection** is one of the most fundamental problems in Machine Learning. Although it has different 'flavors', and there exists different techniques to approach it, the underlying problem is the same: to detect rare occurrences or observations which deviate from a common behavior and do not follow an established pattern. It has numerous applications in cyber-security, finance, computer vision and industrial inspection, among others.
 
@@ -24,7 +31,7 @@ More precisely, the MVTec dataset is a dataset composed of **5354 high resolutio
 
 The main reference for the dataset is the paper [MVTec AD - A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection](https://openaccess.thecvf.com/content_CVPR_2019/papers/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.pdf), written by Bergmann and his collaborators. In this work, they introduce the dataset and also conduct a detailed evaluation of different unsupervised anomaly detection methods based on deep architectures such as convolutional autoencoders and generative adversarial networks, as well as classical computer vision methods. Table 1 in the paper gives a statistical overview for each category. [Table 1](#table-1) in this post is inspired from table 1 in the paper, with some additional relevant information, like the number of channels for each category.
 
-### Table 1
+#### Table 1
 
 |          | Category   | # Train | # Test (good) | # Test (defective) | Size | # Channels |
 |----------|------------|---------|---------------|--------------------|------|------------|
@@ -74,7 +81,7 @@ data = mvtec.MVTEC(root='./mvtec',
 
 The data loader has 7 input arguments. 3 of them are optional (*transform*, *target_transform* and *resize*), and all of them except 'root' have a default value. We can see a brief summary of the input arguments in [table 2](#table-2).
 
-### Table 2
+#### Table 2
 
 | Argument         | Optional? | Default value | Data type | Values             |
 |------------------|-----------|---------------|-----------|--------------------|
@@ -127,7 +134,7 @@ We hope that this implementation may be useful for the ML/AD/CV community, and w
 Until our next post colegas,
 Bernardo
 
-References
+# References
 
 - [1] [Dataset](https://www.mvtec.com/company/research/datasets/mvtec-ad)
 - [2] [Short paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.pdf)
