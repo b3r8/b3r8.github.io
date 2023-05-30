@@ -10,8 +10,8 @@ In this post, we introduce a data loader for the MVTec dataset, a dataset for be
 
 **Anomaly detection** is one of the most fundamental problems in Machine Learning. Although it has different 'flavors', and there exists different techniques to approach it, the underlying problem is the same: to detect rare occurrences or observations which deviate from a common behavior and do not follow an established pattern. It has numerous applications in cyber-security, finance, computer vision and industrial inspection, among others.
 
-![Anomaly Detection example](/assets/imgs/2023-05-29-post/figure_1_blog_1_anomaly.png)
-##### Figure 1. MNIST digit '3' with '1' and '6' anomalies
+![Anomaly Detection example](/assets/imgs/2023-05-29-post/figure_1_blog_1_anomaly.png){:style="display:block; margin-left:auto; margin-right:auto"}
+<h5 align="center"> Figure 1. MNIST digit '3' with '1' and '6' anomalies</h5>
 
 ## The MVTec dataset
 
@@ -125,7 +125,7 @@ Finally, the test notebook provides an example on how we can use the data loader
 We hope that this implementation may be useful for the ML/AD/CV community, and we would like to hear your feedback.
 
 Until our next post colegas,  
-Bernardo
+B
 
 ## References
 
