@@ -2,7 +2,6 @@
 title: "Some brief notes about randomized algorithms"
 date: 2023-06-06
 layout: post
-mathjax: true
 ---
 
 In this post, we share some notes about randomized algorithms and related ideas.
@@ -18,7 +17,7 @@ This post will be an attempt to share a summary of what I consider the most impo
 
 ## Some important concentration inequalities
 
-- **Markov's inequality**: given a non-negative random variable $X$ and $a > 0$, then $P[X > a] < E[X]/a$
+- **Markov's inequality**: given a non-negative random variable $X$ and $a > 0$, then $P[X > a] < E[X]/a$ \\[ \frac{1}{n^{2}} \\]
 
 Until our next post colegas,  
 B
