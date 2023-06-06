@@ -23,6 +23,10 @@ This post will be an attempt to share a summary of what I consider the most impo
 
 \\[ P[X \geq a] \leq \frac{E[X]}{a} \\]
 
+- **Chebyshev's inequality**: given a random variable \\( X \\) with finite non-zero variance \\( \sigma^2 \\) and \\( a > 0 \\), then:
+
+\\[ P[|X - \mu| \geq a\sigma] \leq \frac{1}{a^2} \\]
+
 Until our next post colegas,  
 B
 
