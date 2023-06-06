@@ -2,6 +2,7 @@
 title: "Some brief notes about randomized algorithms"
 date: 2023-06-06
 layout: post
+mathjax: true
 ---
 
 In this post, we share some notes about randomized algorithms and related ideas.
