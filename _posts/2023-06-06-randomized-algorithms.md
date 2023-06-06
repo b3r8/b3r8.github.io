@@ -7,6 +7,14 @@ layout: post
 In this post, we share some notes about randomized algorithms and related ideas.
 
 <script type="text/javascript" charset="utf-8" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+</script>
+
 
 ## Some random stuff
 
