@@ -19,7 +19,7 @@ This post will be an attempt to share a summary of what I consider the most impo
 
 ## Some important concentration inequalities
 
-- **Markov's inequality**: given a non-negative random variable \( X \) and \( a > 0\), then \( P[X \geq a] \leq \frac{E[X]}{a} \) \\( \frac{1}{n^{2}} \\)
+- **Markov's inequality**: given a non-negative random variable \\( X \\) and \\( a > 0 \\), then \\( P[X \geq a] \leq \frac{E[X]}{a} \\) \\( \frac{1}{n^{2}} \\)
 
 Until our next post colegas,  
 B
