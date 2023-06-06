@@ -28,3 +28,6 @@ exclude:
     - Gemfile
     - LICENSE
     - README.md
+
+# Build settings
+markdown: kramdown
