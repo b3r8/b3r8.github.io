@@ -7,14 +7,6 @@ layout: post
 In this post, we share some notes about randomized algorithms and related ideas.
 
 <script type="text/javascript" charset="utf-8" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$']]
-    }
-  };
-</script>
-
 
 ## Some random stuff
 
@@ -27,7 +19,7 @@ This post will be an attempt to share a summary of what I consider the most impo
 
 ## Some important concentration inequalities
 
-- **Markov's inequality**: given a non-negative random variable $X$ and $a > 0$, then $P[X > a] < E[X]/a$ \\[ \frac{1}{n^{2}} \\]
+- **Markov's inequality**: given a non-negative random variable $X$ and $a > 0$, then $P[X > a] < E[X]/a$ \\( \frac{1}{n^{2}} \\)
 
 Until our next post colegas,  
 B
