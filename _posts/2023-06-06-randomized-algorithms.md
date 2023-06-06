@@ -1,10 +1,10 @@
-<script type="text/javascript" charset="utf-8" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 ---
 title: "Some brief notes about randomized algorithms"
 date: 2023-06-06
 layout: post
 ---
+
+<script type="text/javascript" charset="utf-8" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 In this post, we share some notes about randomized algorithms and related ideas.
 
