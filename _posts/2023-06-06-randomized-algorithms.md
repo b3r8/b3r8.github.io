@@ -25,12 +25,12 @@ This post will be an attempt to share a summary of what I consider the most impo
 
 - **Chebyshev's inequality**: given a random variable \\( X \\) with finite non-zero variance \\( \sigma^2 \\) and \\( a > 0 \\), then:
 
-\\[ P[\lvertX - \mu\rvert \geq a\sigma] \leq \frac{1}{a^2} \\]
+\\[ P[\lvert X - \mu \rvert \geq a\sigma] \leq \frac{1}{a^2} \\]
 
 - **Hoeffding's inequality**: let \\( X_1, ..., X_n \\) be independent random variables such that \\( a_i \leq X_i \leq b_i \\), and \\( S = X_1+...+X_n \\), then for all \\( t > 0 \\):
 
-\\[ P[S - E[S] \geq t] \leq \exp(-\frac{2t^2}{\sum (b_i-a_i)^2}) \\]
-\\[ P[\lvertS - E[S]\rvert \geq t] \leq 2\exp(-\frac{2t^2}{\sum (b_i-a_i)^2}) \\]
+\\[ P[S - E[S] \geq t] \leq \exp \left(-\frac{2t^2}{\sum (b_i-a_i)^2} \right) \\]
+\\[ P[\lvert S - E[S] \rvert \geq t] \leq 2\exp \left(-\frac{2t^2}{\sum (b_i-a_i)^2} \right) \\]
 
 Until our next post colegas,  
 B
