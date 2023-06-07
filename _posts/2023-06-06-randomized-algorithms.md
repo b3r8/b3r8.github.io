@@ -83,7 +83,7 @@ Create a data structure to efficiently sample (\\( O(1) \\)) from a discrete pro
         - \\( \frac{1}{n} \\) liquid on each of them
         - At most 2 different liquids at each bucket
         - \\( q_1, q_2, …, q_n \\)
-    - How? [Walker’s alias method](https://en.wikipedia.org/wiki/Alias_method#Table_generation).
+- How? [Walker’s alias method](https://en.wikipedia.org/wiki/Alias_method#Table_generation).
 
 ![Alias method](/assets/imgs/2023-06-06-post/figure_3_blog_2_walker_alias_method.png){:style="display:block; margin-left:auto; margin-right:auto"}
 <h5 align="center"> Figure 3. Walker’s alias method. Image taken from [7]</h5>
@@ -99,8 +99,8 @@ Necessary and sufficient condition for a finite sequence of natural numbers to b
 
 Given a set with \\( n \\) items, choose \\( m \\) of them u.a.r (uniformly at random).
 
-- If \\( m >> \sqrt{n} \\), w.h.p. (with high probability) there is a collision (i.e., two persons share birthday)
-- If \\( m << \sqrt{n} \\), w.h.p. there is *no* collision (i.e., no shared birthday)
+- If \\( m \gg \sqrt{n} \\), w.h.p. (with high probability) there is a collision (i.e., two persons share birthday)
+- If \\( m \ll \sqrt{n} \\), w.h.p. there is *no* collision (i.e., no shared birthday)
 - For instance, given a common year, we have \\( n = 365 \\) days. The square root of n is \\( \sqrt{365} \approx 19 \\). In a reunion with \\( 10 \\) people, the probability of two persons sharing birthday is approximately 0.117. On the other hand, in a reunion with \\( 40 \\) people, the probability of two persons sharing birthday is approximately 0.891.
 - Brain teaser: you have a million of empty buckets in front of you, and you throw (let's say) three thousand of balls at them. Three thousand is not even one percent of one million. Assuming that the probability for each ball of landing at any bucket is the same, what is the probability of a collision (i.e., at least one bucket having more than one ball)? 
 
@@ -111,10 +111,6 @@ Given a set with \\( n \\) items, how many items do you expect you need to draw 
 - The expected number of trials needed grows as \\(  \Theta(n\log(n)) \\)
 - More precisely: \\( E[ T ] = n\log(n) + \gamma n + \frac{1}{2} + O(\frac{1}{n}) \\), where \\(  \gamma \approx 0.5772 \\) is the [Euler–Mascheroni constant](https://en.wikipedia.org/wiki/Euler%27s_constant).
 
-## Poissonization
-
-- The formal statement of the idea behind Poissonization goes something like this: given 
-
 ## Reservoir sampling
 
 A simple and elegant idea on how to sample u.a.r. from a streaming of \\( n \\) items, where we don't know in advance the value of \\( n \\). 
@@ -124,9 +120,9 @@ A simple and elegant idea on how to sample u.a.r. from a streaming of \\( n \\) 
 
 ## Some other important ideas that deserve their own post
 
-Some of the lectures covered very important techniques and ideas that deserve their own post. I don't promise anything, but hopefully we will see a post about them in the future. A glimpse of these ideas: the *JL Lemma*, the *HHL algorithm*, *estimating the average degree of a graph*, *Uniformity testing*.
+Some of the lectures covered very important techniques and ideas that deserve their own post. I don't promise anything, but hopefully we will see a post about them in the future. A glimpse of these ideas: *estimating the average degree of a graph*, the *JL Lemma*, *Poissonization*, *Uniformity testing*, the *HHL algorithm*, among others.
 
-## My implementations
+## Some implementations
 
 I implemented some of the algorithms studied in the lectures. I'm still delighted by the [Karp-Luby-Madras algorithm](https://www.math.cmu.edu/~af1p/Teaching/MCC17/Papers/KLM.pdf). You can find the python implementations [here](https://github.com/b3r8/randomized-algorithms).
 
@@ -145,5 +141,4 @@ B
 - [8] [Erdos-Gallai theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Gallai_theorem)
 - [9] [Birthday paradox](https://en.wikipedia.org/wiki/Birthday_problem)
 - [10] [Coupon collector](https://en.wikipedia.org/wiki/Coupon_collector%27s_problem)
-- [11] [Poissonization](https://users.soe.ucsc.edu/~sesh/Teaching/2020/CSE290A/Slides/Lecture11.pdf)
-- [12] [Reservoir sampling](https://en.wikipedia.org/wiki/Reservoir_sampling)
+- [11] [Reservoir sampling](https://en.wikipedia.org/wiki/Reservoir_sampling)
