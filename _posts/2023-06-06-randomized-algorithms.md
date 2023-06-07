@@ -32,11 +32,6 @@ This post will be an attempt to share a summary of what I consider the most impo
 \\[ P[S - E[S] \geq t] \leq \exp \left(-\frac{2t^2}{\sum (b_i-a_i)^2} \right) \\]
 \\[ P[\lvert S - E[S] \rvert \geq t] \leq 2\exp \left(-\frac{2t^2}{\sum (b_i-a_i)^2} \right) \\]
 
-- **Hoeffding's inequality**: let \\( X_1, ..., X_n \\) be independent random variables such that \\( a_i \leq X_i \leq b_i \\), and \\( S = X_1+...+X_n \\), then for all \\( t > 0 \\):
-
-\\[ P[S - E[S] \geq t] \leq \exp \left(-\frac{2t^2}{\sum (b_i-a_i)^2} \right) \\]
-\\[ P[\lvert S - E[S] \rvert \geq t] \leq 2\exp \left(-\frac{2t^2}{\sum (b_i-a_i)^2} \right) \\]
-
 - **Generic Chernoff bounds**: given a random variable \\( X \\) and \\( t > 0 \\), we can apply *Markov's inequality* to the random variable \\( e^{tX} \\):
 
 \\[ P[X \geq a] = P[e^{tX} \geq e^{ta}] \leq E[ e^{tX} ]e^{-ta} \\]
@@ -51,7 +46,7 @@ Similarly, for the other tail:
 
 The quantity \\( E[ e^{tX} ] \\) it's called the **moment-generating function**, and it have some important properties, the most relevant being that it uniquely determines the distribution of \\( X \\).
 
-- **Multiplicative Chernoff bounds**: let \\( X_1, ..., X_n \\) be independent random variables such that \\( X_i \in \{0,1\} \\), let \\( S = X_1+...+X_n \\), and let \\( \mu = E[S] \\). Then for any \\( \delta > 0 \\):
+- **Multiplicative Chernoff bounds**: let \\( X_1, ..., X_n \\) be independent random variables taking values in {\\( 0,1 \\)}, let \\( S = X_1+...+X_n \\), and let \\( \mu = E[S] \\). Then for any \\( \delta > 0 \\):
 
 \\[ P[S \geq (1+\delta)\mu] < \left(\frac{e^{\delta}}{(1+\delta)^{1+\delta}} \right)^{\mu} \leq \exp \left(-\frac{\mu\delta^2}{3} \right) \\]
 
@@ -61,18 +56,18 @@ Similarly, for the other tail (for any \\( 1 > \delta > 0 \\)):
 
 - **Union bound**: let \\( E_1, ..., E_n \\) be a set of events with probabilities \\( P[ E_1 ], ..., P[ E_n ] \\), respectively. Then:
 
-\\[ P left[ \cupE_i \right] \leq \sum P[ E_i ] \\]
+\\[ P \left[ \cupE_i \right] \leq \sum P[ E_i ] \\]
 
-Proofs for the majority of the inequalities mentioned can be found in wikipedia.
+Proofs for the majority of the inequalities mentioned can be found in wikipedia. A list of useful inequalities can be found in this [cheatsheet](https://sites.math.washington.edu/~morrow/335_17/ineq.pdf)
 
 ![Union bound](/assets/imgs/2023-06-06-post/figure_2_blog_2_union_bound.png){:style="display:block; margin-left:auto; margin-right:auto"}
 <h5 align="center"> Figure 2. Union bound</h5>
 
 ## Approximations to binomial \\( B(n,p) \\) distribution
 
-- **Poisson limit theorem**: if \\( np \\) converges to a finit limit \\( \lambda \\), then Poisson distribution \\( Pois(\lambda) \\) may be used as an approximation to the binomial distribution when \\( n \to \inf \\)
+- **Poisson limit theorem**: if \\( np \\) converges to a finit limit \\( \lambda \\), then Poisson distribution \\( Pois(\lambda) \\) may be used as an approximation to the binomial distribution when \\( n \to \infty \\)
 
-- **de Moivre–Laplace theorem**: Normal distribution \\( \mathcal{N}(np,\,np(1-p)) \\) may be used as an approximation to the binomial distribution when \\( n \to \inf \\) (this is a special case of the [CLT](https://en.wikipedia.org/wiki/Central_limit_theorem))
+- **de Moivre–Laplace theorem**: Normal distribution \\( \mathcal{N}(np,\,np(1-p)) \\) may be used as an approximation to the binomial distribution when \\( n \to \infty \\) (this is a special case of the [CLT](https://en.wikipedia.org/wiki/Central_limit_theorem))
 
 
 Until our next post colegas,  
