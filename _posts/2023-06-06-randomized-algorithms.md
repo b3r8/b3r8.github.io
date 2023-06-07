@@ -8,8 +8,6 @@ In this post, we share some notes about randomized algorithms and related ideas.
 
 <script type="text/javascript" charset="utf-8" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-## Some random stuff
-
 I spent some time the last few months looking for a Randomized Algorithms class to follow online. Luckily, I found the Randomized Algorithms class from UCSC, [CSE290A Spring 2020](https://www.youtube.com/watch?v=sXHr3CDAeWE&list=PLOQjlWvnI0faRpH2oJcyW4CuM5Clt8a2n), by Prof. Sesh Comandur. I’d the pleasure to meet him in person while I was studying at UCSC. I attended and enjoyed his Analysis of Boolean Functions class when I was in SC, so I decided to watch the lectures from his class. 
 
 This post will be an attempt to share a summary of what I consider the most important and interesting ideas from the lectures.
@@ -71,7 +69,7 @@ Proofs for the majority of the inequalities mentioned can be found in wikipedia.
 
 ## The Median trick
 
-Used to boost the confidence \\( \delta \\) of a randomized algorithm: Given an algorithm that generates an output with confidence (i.e., probability of being correct) at least \\( \frac{1}{2} \\), run the algorithm \\( O \left(\log \left(\frac{1}{\delta} \right) \right) \\) times, and return the median output of such runs. The confidence of this procedure is at least \\( 1-\delta \\)
+Used to boost the confidence \\( \delta \\) of a randomized algorithm: given an algorithm that generates an output with confidence (i.e., probability of being correct) at least \\( \frac{1}{2} \\), run the algorithm \\( O \left(\log \left(\frac{1}{\delta} \right) \right) \\) times, and return the median output of such runs. The confidence of this procedure is at least \\( 1-\delta \\)
 
 ## Walker’s alias method
 
@@ -115,7 +113,7 @@ Given a set with \\( n \\) items, how many items do you expect you need to draw 
 
 ## Poissonization
 
-- The formal statement of the idea behind Poissonization goes something like this: 
+- The formal statement of the idea behind Poissonization goes something like this: given 
 
 ## Reservoir sampling
 
