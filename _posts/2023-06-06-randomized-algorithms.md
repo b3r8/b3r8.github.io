@@ -56,7 +56,7 @@ Similarly, for the other tail (for any \\( 1 > \delta > 0 \\)):
 
 - **Union bound**: let \\( E_1, ..., E_n \\) be a set of events with probabilities \\( P[ E_1 ], ..., P[ E_n ] \\), respectively. Then:
 
-\\[ P \left[ \cup E_i \right] \leq \sum P[ E_i ] \\]
+\\[ P \left[ \bigcup E_i \right] \leq \sum P[ E_i ] \\]
 
 Proofs for the majority of the inequalities mentioned can be found in wikipedia. A list of useful inequalities can be found in this [cheatsheet](https://sites.math.washington.edu/~morrow/335_17/ineq.pdf).
 
@@ -71,7 +71,7 @@ Proofs for the majority of the inequalities mentioned can be found in wikipedia.
 
 ## The Median trick
 
-Used to boost the confidence \\( \delta \\) of a randomized algorithm: Given an algorithm that generates an output with confidence (i.e., probability of being correct) at least \\( \frac{1}{2} \\), run the algorithm \\( O(\frac{1}{\log(\delta)})) \\) times, and return the median output of such runs. The confidence of this procedure is at least \\( 1-\delta \\)
+Used to boost the confidence \\( \delta \\) of a randomized algorithm: Given an algorithm that generates an output with confidence (i.e., probability of being correct) at least \\( \frac{1}{2} \\), run the algorithm \\( O \left(\log \left(\frac{1}{\delta} \right) \right) \\) times, and return the median output of such runs. The confidence of this procedure is at least \\( 1-\delta \\)
 
 ## Walker’s alias method
 
@@ -88,7 +88,14 @@ Create a data structure to efficiently sample (\\( O(1) \\)) from a discrete pro
     - How? [Walker’s alias method](https://en.wikipedia.org/wiki/Alias_method#Table_generation).
 
 ![Alias method](/assets/imgs/2023-06-06-post/figure_3_blog_2_walker_alias_method.png){:style="display:block; margin-left:auto; margin-right:auto"}
-<h5 align="center"> Figure 3. Walker’s alias method. Image taken from [here](https://pandasthumb.org/archives/2012/08/lab-notes-the-a.html)</h5>
+<h5 align="center"> Figure 3. Walker’s alias method. Image taken from [7]</h5>
+
+## Erdos-Gallai theorem
+
+Necessary and sufficient condition for a finite sequence of natural numbers to be the [degree sequence](https://en.wikipedia.org/wiki/Degree_(graph_theory)#Degree_sequence) of a graph
+
+![Handshaking](/assets/imgs/2023-06-06-post/figure_4_blog_2_craiyon_men_in_suit_with_multiple_hands.png){:style="display:block; margin-left:auto; margin-right:auto"}
+<h5 align="center"> Figure 4. 'Men in suit with multiple hands', image generated with DALL-E mini model</h5>
 
 Until our next post colegas,  
 B
@@ -97,4 +104,9 @@ B
 
 - [1] [Lectures playlist](https://www.youtube.com/watch?v=sXHr3CDAeWE&list=PLOQjlWvnI0faRpH2oJcyW4CuM5Clt8a2n)
 - [2] [DALL-E mini model](https://www.craiyon.com)
-- [3] [Useful Inequalities cheatsheet](https://sites.math.washington.edu/~morrow/335_17/ineq.pdf)
+- [3] [Concentration inequalities](https://en.wikipedia.org/wiki/Concentration_inequality)
+- [4] [Poisson limit theorem](https://en.wikipedia.org/wiki/Poisson_limit_theorem)
+- [5] [de Moivre–Laplace theorem](https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem)
+- [6] [Median trick](http://www.cs.columbia.edu/~andoni/algoS19/scribes/scribe2.pdf)
+- [7] [Panda's Thumb](https://pandasthumb.org/archives/2012/08/lab-notes-the-a.html)
+- [8] [Erdos-Gallai theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Gallai_theorem)
