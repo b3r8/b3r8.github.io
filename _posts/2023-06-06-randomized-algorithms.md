@@ -56,9 +56,9 @@ Similarly, for the other tail (for any \\( 1 > \delta > 0 \\)):
 
 - **Union bound**: let \\( E_1, ..., E_n \\) be a set of events with probabilities \\( P[ E_1 ], ..., P[ E_n ] \\), respectively. Then:
 
-\\[ P \left[ \cupE_i \right] \leq \sum P[ E_i ] \\]
+\\[ P \left[ \cup E_i \right] \leq \sum P[ E_i ] \\]
 
-Proofs for the majority of the inequalities mentioned can be found in wikipedia. A list of useful inequalities can be found in this [cheatsheet](https://sites.math.washington.edu/~morrow/335_17/ineq.pdf)
+Proofs for the majority of the inequalities mentioned can be found in wikipedia. A list of useful inequalities can be found in this [cheatsheet](https://sites.math.washington.edu/~morrow/335_17/ineq.pdf).
 
 ![Union bound](/assets/imgs/2023-06-06-post/figure_2_blog_2_union_bound.png){:style="display:block; margin-left:auto; margin-right:auto"}
 <h5 align="center"> Figure 2. Union bound</h5>
@@ -69,6 +69,26 @@ Proofs for the majority of the inequalities mentioned can be found in wikipedia.
 
 - **de Moivre–Laplace theorem**: Normal distribution \\( \mathcal{N}(np,\,np(1-p)) \\) may be used as an approximation to the binomial distribution when \\( n \to \infty \\) (this is a special case of the [CLT](https://en.wikipedia.org/wiki/Central_limit_theorem))
 
+## The Median trick
+
+Used to boost the confidence \\( \delta \\) of a randomized algorithm: Given an algorithm that generates an output with confidence (i.e., probability of being correct) at least \\( \frac{1}{2} \\), run the algorithm \\( O(\frac{1}{\log(\delta)})) \\) times, and return the median output of such runs. The confidence of this procedure is at least \\( 1-\delta \\)
+
+## Walker’s alias method
+
+Create a data structure to efficiently sample (\\( O(1) \\)) from a discrete probability distribution.
+
+- \\( O(n) \\) preprocessing time
+- Analogy with a liquid:
+    - \\( n \\) buckets with \\( p_i \\) liquid on them
+    - Immiscible liquids
+    - Transform it to n buckets with:
+        - \\( \frac{1}{n} \\) liquid on each of them
+        - At most 2 different liquids at each bucket
+        - \\( q_1, q_2, …, q_n \\)
+    - How? [Walker’s alias method](https://en.wikipedia.org/wiki/Alias_method#Table_generation).
+
+![Alias method](/assets/imgs/2023-06-06-post/figure_3_blog_2_walker_alias_method.png){:style="display:block; margin-left:auto; margin-right:auto"}
+<h5 align="center"> Figure 3. Walker’s alias method. Image taken from [here](https://pandasthumb.org/archives/2012/08/lab-notes-the-a.html)</h5>
 
 Until our next post colegas,  
 B
