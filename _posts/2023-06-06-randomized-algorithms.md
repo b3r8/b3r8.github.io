@@ -69,7 +69,7 @@ Proofs for the majority of the inequalities mentioned can be found in wikipedia.
 
 ## The Median trick
 
-Used to boost the confidence \\( \delta \\) of a randomized algorithm: given an algorithm that generates an output with confidence (i.e., probability of being correct) at least \\( \frac{1}{2} \\), run the algorithm \\( O \left(\log \left(\frac{1}{\delta} \right) \right) \\) times, and return the median output of such runs. The confidence of this procedure is at least \\( 1-\delta \\)
+Used to boost the confidence of a randomized algorithm: given an algorithm that generates an output with confidence (i.e., probability of being correct) at least \\( \frac{1}{2} \\), run the algorithm \\( O \left(\log \left(\frac{1}{\delta} \right) \right) \\) times, and return the median output of such runs. The confidence of this procedure is at least \\( 1-\delta \\)
 
 ## Walker’s alias method
 
