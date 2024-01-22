@@ -18,7 +18,7 @@ Clustering algorithms, Generative models, Learning from Contradictions.
 
 - **Generating universum samples from latent space**. Bernardo Gonzalez, Ricardo Menchaca, Karina Torres. *Working paper*.
 
-- [$DOC^3$: Deep One Class Classification using Contradictions](https://link.springer.com/article/10.1007/s10994-023-06362-5). Sauptik Dhar, Bernardo Gonzalez. *Machine Learning, 2023*.
+- [DOC3: Deep One Class Classification using Contradictions](https://link.springer.com/article/10.1007/s10994-023-06362-5). Sauptik Dhar, Bernardo Gonzalez. *Machine Learning, 2023*.
 
 - [Clustering Improves the Goemans–Williamson Approximation for the Max-Cut Problem](https://www.mdpi.com/2079-3197/8/3/75). Angel Rodriguez, Bernardo Gonzalez, Ricardo Menchaca, Peter Stadler. *Computation, 2020*.
 
@@ -34,7 +34,7 @@ All papers in [Google scholar](https://scholar.google.com/citations?hl=es&user=J
 ## Some code releases
 
 - [MVTec data loader](https://github.com/b3r8/mvtec-dataloader). Data loader for the MVTec dataset for benchmarking anomaly detection methods with a focus on industrial inspection.
-- [$DOC^3$](https://github.com/sauptikdhar/DOC3). Code for the $DOC^3$ paper published in the Machine Learning journal in 2023.
+- [DOC3](https://github.com/sauptikdhar/DOC3). Code for the DOC3 paper published in the Machine Learning journal in 2023.
 
 ## Education
 
