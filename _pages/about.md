@@ -51,7 +51,7 @@ All papers in [Google scholar](https://scholar.google.com/citations?hl=es&user=J
 
 ## Talks
 
-- Clustering pre-processing for SVM. *Machine Learning Lab Seminar, Fall 2016*
-- Robust loss functions for large scale Graph SLAM. *Bosch Center for Artificial Intelligence, Summer 2017*
-- Analyzing model’s performance through VC-dimension. *Intuition Machines, Spring 2022*
 - Advice for early-career data scientists. *Tec de Monterrey CEM, Fall 2023*
+- Analyzing model’s performance through VC-dimension. *Intuition Machines, Spring 2022*
+- Robust loss functions for large scale Graph SLAM. *Bosch Center for Artificial Intelligence, Summer 2017*
+- Clustering pre-processing for SVM. *Machine Learning Lab Seminar, Fall 2016*
