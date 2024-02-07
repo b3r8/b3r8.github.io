@@ -16,6 +16,8 @@ Clustering algorithms, Generative models, Learning from Contradictions.
 
 ## Research
 
+- [Robust greedy algorithms for the Max-Cut relaxation](../assets/docs/efficient_max_cut_v0.pdf). Bernardo Gonzalez, Angel Rodriguez, Ricardo Menchaca. *Working paper*.
+
 - **Generating universum samples from latent space**. Bernardo Gonzalez, Ricardo Menchaca, Karina Torres. *Working paper*.
 
 - [DOC3: Deep One Class Classification using Contradictions](https://link.springer.com/article/10.1007/s10994-023-06362-5). Sauptik Dhar, Bernardo Gonzalez. *Machine Learning, 2023*.
